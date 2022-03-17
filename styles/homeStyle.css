@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+:root{
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 15px;
+    background: var(--body-bg-color);
+    color: var(--text-color);
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 800px 1fr;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+aside{
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.section-aside{
+    height: fit-content;
+    width: 20vw;
+    border-radius: 15px;
+    background: var(--bg-cards);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.384);
+}
+.section-aside header{
+    margin-bottom: 20px;
+}
+.section-aside h2{
+    font-size: 1.2rem;
+}
+.section-perfil{
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+.section-perfil img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 100%;
+    border: 3px solid rgba(45, 204, 253, 0.651);
+}
+.section-perfil p{
+    font-size: .875em;
+}
+
+.section-address {
+    font-size: .875em;   
+}
+.section-address span{
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+.section-address a{
+    text-decoration: none;
+    outline: none;
+    color: var(--text-color);
+    margin-top: 3px;
+    margin-left: 10px;
+    font-size: 1rem;
+    padding-top: 10px;
+}
+.section-address img{
+    filter: invert();
+    height: 20px;
+    padding-top: 10px;
+    opacity: 30%;
+}
+
+.section-tecnologies{
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.section-tecnologies div{
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 0px 5px;
+    gap: 9px;
+    box-sizing: border-box;
+}
+.section-tecnologies p{
+    border: 1px solid var(--bg-techs);
+    background: rgba(45, 204, 253, 0.651);
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    border-radius: 20px;
+    width: 60px;
+    text-align: center;
+    font-size: .655em;
+    text-transform: uppercase;
+    padding: 3px;
+
+}
+.section-aside ul{
+    padding: 0px 20px;
+}
+.section-aside h3{
+    font-size: 1em;
+}
+.section-exp p, .section-education p {
+    font-size: .855em;
+    margin-bottom: 10px;
+    
+}
+
+
+main{
+    grid-column: 2/4;
+    box-sizing: border-box;
+    height: 100%;
+    border-radius: 15px;
+    background: var(--bg-cards);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.384);
+
+}
+footer{
+    grid-column: 1/4;
+    height: 100%;
+    text-align: center;
+}
